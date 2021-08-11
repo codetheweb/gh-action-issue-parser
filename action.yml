@@ -1,11 +1,10 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Issue Parser'
+description: 'Runs issue-parser and provides the output.'
+author: 'Max Isom'
 inputs:
-  milliseconds: # change this
+  body:
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: 'issue body'
 runs:
   using: 'node12'
   main: 'dist/index.js'
